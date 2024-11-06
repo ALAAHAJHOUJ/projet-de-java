@@ -5,11 +5,11 @@ import java.util.Scanner;
 
 
 public class Main {
-    public static int produit (int a ,int b)
+    public static int produit (int a ,int b)//fonction pour calculer le produit de 2 entiers
     {
     return a*b;
     }
-    public static int somme(int a,int b)
+    public static int somme(int a,int b)//fonction pour calculer la somme de 2 entiers
     {
     return a+b;
     }  
