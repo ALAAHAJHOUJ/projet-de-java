@@ -70,6 +70,13 @@ public class Main {
     }
     }
     }
+
+	public static int puissance(int nb,int i)//fonction pour calculer nb a la puissance i,i est la puissance et nb est la base
+	{
+	if(i==0) return 1;
+	else if(i==1) return nb;
+	else return nb*puissance(nb);
+	}
     
 	public static void main(String[] args) {
     Scanner sc=new Scanner(System.in);
