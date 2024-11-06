@@ -71,7 +71,7 @@ public class Main {
     }
     }
 
-	public static int puissance(int nb,int i)//fonction pour calculer nb a la puissance i,i est la puissance et nb est la base
+        public static int puissance(int nb,int i)//fonction pour calculer nb a la puissance i,i est la puissance et nb est la base
 	{
 	if(i==0) return 1;
 	else if(i==1) return nb;
@@ -79,8 +79,8 @@ public class Main {
 	}
     
 	public static void main(String[] args) {
-    Scanner sc=new Scanner(System.in);
-    try {
+        Scanner sc=new Scanner(System.in);
+        try {
             System.out.println("saisir un entier:");
             String nb=sc.nextLine();
             if(nb=="")
@@ -94,7 +94,7 @@ public class Main {
          }catch (Exception e) { 
 		 System.out.println("erreur de saisie "); //indiquer un message d'erreur dans le cas d'une mauvaise saisie 
 	 }
-     sc.close();
-     System.out.println("fin du programme(java)!!!"); 
+        sc.close();
+        System.out.println("fin du programme(java)!!!"); 
 	} 
 } 
