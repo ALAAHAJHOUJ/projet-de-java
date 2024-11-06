@@ -74,20 +74,20 @@ public class Main {
 	public static void main(String[] args) {
     Scanner sc=new Scanner(System.in);
     try {
-    System.out.println("saisir un entier:");
-   String nb=sc.nextLine();
-   if(nb=="")
-	   System.out.println("valeur vide");
-   else 
-   afficher(Integer.parseInt(nb));
-   if(Integer.parseInt(nb)<15)
-   System.out.println("le factorielle de ce nombre est:"+fact(Integer.parseInt(nb)));
-   else {
-	   System.out.println("le nombre peut causer des problemes");}
-    }catch (Exception e) { 
-		System.out.println("erreur de saisie "); 
-	}
-   sc.close();
-	System.out.println("fin du programme(java)!!!"); 
+            System.out.println("saisir un entier:");
+            String nb=sc.nextLine();
+            if(nb=="")
+	       System.out.println("valeur vide");
+            else {
+                  if(verifier(nb)!=1)//verifier la syntaxe de la chaine saisie 
+	          System.out.println("erreur de saisie");
+                  else
+                  System.out.println("le factorielle de ce nombre est:"+fact(Integer.parseInt(nb)));//calculer le factorielle du nombre saisi
+                 }
+         }catch (Exception e) { 
+		 System.out.println("erreur de saisie "); //indiquer un message d'erreur dans le cas d'une mauvaise saisie 
+	 }
+     sc.close();
+     System.out.println("fin du programme(java)!!!"); 
 	} 
 } 
