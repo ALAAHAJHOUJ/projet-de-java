@@ -75,7 +75,7 @@ public class Main {
 	{
 	if(i==0) return 1;
 	else if(i==1) return nb;
-	else return nb*puissance(nb);
+	else return nb*puissance(nb,i-1);//fixer une erreur
 	}
     
 	public static void main(String[] args) {
